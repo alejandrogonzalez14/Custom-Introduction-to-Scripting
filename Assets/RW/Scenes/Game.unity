@@ -437,6 +437,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 306621259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &414222274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3766863230289970331, guid: 726881a9b8c21e74dbb2d4b473c6d16d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1139118821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sheepSavedText: {fileID: 1139118823}
   sheepDroppedText: {fileID: 1139118822}
-  gameOverWindow: {fileID: 1139118824}
+  gameOverWindow: {fileID: 414222274}
 --- !u!1 &581733751
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,12 +932,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1139118824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3766863229103784266, guid: 726881a9b8c21e74dbb2d4b473c6d16d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1139118821}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307113102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6020313712292669828, guid: c91d458c12526534eb19d65378204353,
