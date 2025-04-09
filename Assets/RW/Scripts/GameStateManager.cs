@@ -32,6 +32,7 @@ public class GameStateManager : MonoBehaviour
     public void SavedSheep()
     {
         sheepSaved++;
+        UIManager.Instance.UpdateSheepSaved();
     }
 
     private void GameOver()
@@ -43,10 +44,12 @@ public class GameStateManager : MonoBehaviour
     public void DroppedSheep()
     {
         sheepDropped++;
+        UIManager.Instance.UpdateSheepDropped();
 
         if (sheepDropped == sheepDroppedBeforeGameOver)
         {
             GameOver();
+            UIManager.Instance.ShowGameOverWindow();
         }
     }
 
