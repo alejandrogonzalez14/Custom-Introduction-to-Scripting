@@ -648,10 +648,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 2cd4d212-b54c-4a18-ad1b-8fd7adcc91de
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Custom-Introduction-to-Scripting
+  organizationId: alex41596
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
