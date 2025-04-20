@@ -74,6 +74,9 @@ public class Sheep : MonoBehaviour
         // Whenever we dròp a sheep, increase a bit time btwn spawns to give player time to recover.
         sheepSpawner.timeBetweenSpawns += 0.5f;
 
+        // do screen shake
+        ScreenShake.Instance.StartShake(0.75f, 0.3f);
+
         myRigidbody.isKinematic = false;
         myCollider.isTrigger = false;
         Destroy(gameObject, dropDestroyDelay);
