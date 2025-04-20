@@ -7,6 +7,7 @@ public class Sheep : MonoBehaviour
     public float gotHayDestroyDelay;
     private bool hitByHay;
 
+    private bool dropped;
     public float dropDestroyDelay;
     private Collider myCollider;
     private Rigidbody myRigidbody;
@@ -36,7 +37,7 @@ public class Sheep : MonoBehaviour
             Destroy(other.gameObject);
             HitByHay();
         }
-        else if (other.CompareTag("DropSheep"))
+        else if (other.CompareTag("DropSheep") && !dropped)
         {
             Drop();
         }
@@ -73,6 +74,8 @@ public class Sheep : MonoBehaviour
         sheepSpawner.RemoveSheepFromList(gameObject);
         // Whenever we dròp a sheep, increase a bit time btwn spawns to give player time to recover.
         sheepSpawner.timeBetweenSpawns += 0.5f;
+
+        dropped = true;
 
         // do screen shake
         ScreenShake.Instance.StartShake(0.75f, 0.3f);
