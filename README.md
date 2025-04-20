@@ -14,6 +14,10 @@ As an addition to the base game created in the Part I tutorial, I have included 
 - Score display on HUD.
 - Selectable color of the Hay Machine in Title screen, that carries over to the game.
 
+Lastly, I added my **own** modifications to the game:
+- **Variable sheep spawn rate**: now the time between sheep spawn shrinks 1% each time a sheep is successfully saved. It increases by 0.5 seconds when a sheep is dropped, to give the player time to recover.
+- **Screen shake**: Added a visual effect of screen shake when a sheep is dropped, to enphasize it more.
+
 ## 🏁 **Getting Started**
 You can play the game by following these simple steps:
 
