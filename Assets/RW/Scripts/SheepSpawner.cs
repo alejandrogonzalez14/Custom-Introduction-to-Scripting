@@ -30,7 +30,7 @@ public class SheepSpawner : MonoBehaviour
         Vector3 randomPosition = sheepSpawnPositions[Random.Range(0, sheepSpawnPositions.Count)].position;
         GameObject sheep = Instantiate(sheepPrefab, randomPosition, sheepPrefab.transform.rotation);
         sheepList.Add(sheep);
-        sheep.GetComponent<Sheep>().SetSpawner(this); // 4
+        sheep.GetComponent<Sheep>().SetSpawner(this);
     }
 
     private IEnumerator SpawnRoutine()
@@ -38,7 +38,10 @@ public class SheepSpawner : MonoBehaviour
         while (canSpawn)
         {
             SpawnSheep();
+            
             yield return new WaitForSeconds(timeBetweenSpawns);
+
+            Debug.Log(timeBetweenSpawns);
         }
     }
 
@@ -49,9 +52,9 @@ public class SheepSpawner : MonoBehaviour
 
     public void DestroyAllSheep()
     {
-        foreach (GameObject sheep in sheepList) // 1
+        foreach (GameObject sheep in sheepList)
         {
-            Destroy(sheep); // 2
+            Destroy(sheep);
         }
 
         sheepList.Clear();

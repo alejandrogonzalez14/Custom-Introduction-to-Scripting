@@ -50,6 +50,8 @@ public class Sheep : MonoBehaviour
         SoundManager.Instance.PlaySheepHitClip();
 
         sheepSpawner.RemoveSheepFromList(gameObject);
+        // Make sheep spawn 1% faster after each save
+        sheepSpawner.timeBetweenSpawns *= 0.99f;
 
         hitByHay = true;
         runSpeed = 0;
@@ -69,6 +71,8 @@ public class Sheep : MonoBehaviour
         SoundManager.Instance.PlaySheepDroppedClip();
 
         sheepSpawner.RemoveSheepFromList(gameObject);
+        // Whenever we dròp a sheep, increase a bit time btwn spawns to give player time to recover.
+        sheepSpawner.timeBetweenSpawns += 0.5f;
 
         myRigidbody.isKinematic = false;
         myCollider.isTrigger = false;
